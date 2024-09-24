@@ -1,7 +1,11 @@
-#include <iostream>
 import core;
+import message;
 
 int main() {
-    std::cout << core::getMessage() << std::endl;
+    auto messages = core::Messages{};
+
+    auto message = message::getMessage();
+    messages.printLine(message);
+
     return 0;
 }

@@ -1,18 +1,18 @@
 module;
 
-#include <string>
+#include <iostream>
 
 export module core;
 
 namespace core
 {
-    export std::string getMessage();
-}
-
-namespace core
-{
-    std::string getMessage()
+    export class Messages
     {
-        return "Core module";
-    }
+    public:
+        template<class T>
+        void printLine(const T& message)
+        {
+            std::cout << message << "\n";
+        }
+    };
 }
