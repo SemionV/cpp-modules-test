@@ -1,6 +1,7 @@
 #include <iostream>
+import core;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << core::getMessage() << std::endl;
     return 0;
 }
