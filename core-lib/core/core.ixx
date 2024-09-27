@@ -1,8 +1,6 @@
-module;
-
-#include <iostream>
-
 export module core;
+
+import std;
 
 namespace core
 {

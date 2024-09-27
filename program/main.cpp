@@ -1,10 +1,11 @@
 import core;
 import message;
+import std;
 
 int main() {
     auto messages = core::Messages{};
 
-    auto message = message::getMessage();
+    std::string message = message::getMessage();
     messages.printLine(message);
 
     return 0;

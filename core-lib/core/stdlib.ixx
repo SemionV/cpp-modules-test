@@ -1,8 +1,6 @@
-module;
-
-#include <string>
-
 export module core.stdlib;
+
+import std;
 
 export namespace core::stdlib
 {
