@@ -13,5 +13,9 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     add_compile_options(-fexperimental-library)
 endif()
 
+if(MSVC)
+    add_compile_options(/experimental:module)
+endif()
+
 add_subdirectory(core-lib)
 add_subdirectory(program)
