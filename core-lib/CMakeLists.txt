@@ -8,3 +8,6 @@ target_sources(core
 target_sources(core
         PRIVATE
             message/message.cpp)
+
+add_dependencies(core std.compat)
+target_link_libraries(core std.compat)

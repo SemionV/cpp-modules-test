@@ -1,6 +1,8 @@
+#include <string>
+
 import core;
 import message;
-import std.core;
+//import std;
 
 int main() {
     auto messages = core::Messages{};

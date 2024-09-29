@@ -1,6 +1,6 @@
 export module core.stdlib;
 
-import std.core;
+import std;
 
 export namespace core::stdlib
 {
